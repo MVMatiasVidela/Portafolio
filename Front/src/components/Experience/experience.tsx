@@ -30,7 +30,7 @@ const Experience = () => {
         <div className="space-y-4 p-4">
           <div>
             <h1 className="text-[20px]">
-              Desarrollo FullStack | Bootcamp "Soy Henry"
+              Desarrollo FullStack | Bootcamp Soy Henry.
             </h1>
             <p className="text-darkD-400">Abril 2024 - Julio 2024</p>
             <p
@@ -51,7 +51,7 @@ const Experience = () => {
           </div>
           <div>
             <h1 className="text-[20px]">
-              Teacher Assistant | Bootcamp "Soy Henry"
+              Teacher Assistant | Bootcamp Soy Henry.
             </h1>
             <p className="text-darkD-400">Mayo 2024 - Julio 2024</p>
             <p
