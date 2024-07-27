@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: inherit;
+  background-color: black;
+  position: relative;
+  color: white
+}
+
+
+/*FONDOS*/
+@keyframes circulo1 {
+  from {
+    transform: rotate(0deg) scale(2);
+  }
+  to {
+    transform: rotate(360deg) scale(2);
+  }
+}
+@keyframes aparecer1 {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+/* #cursor.mini {
+  transform: scale(0.7);
+}
+#cursor {
+  width: 1em;
+  height: 1em;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  border: 2px solid white;
+  pointer-events: none;
+  border-radius: 50%;
+} */
+.circulos {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(40px);
+  animation: circulo1 50s linear infinite both;
+}
+.circulos .circulo {
+  position: absolute;
+  width: 55%;
+  height: 55%;
+  animation: circulo1 50s linear infinite both;
+}
+.circulos .circulo1 {
+  top: 0%;
+  left: 0%;
+}
+.circulos .circulo1 .path {
+  fill: skyblue;
+}
+.circulos .circulo2 {
+  top: 0%;
+  right: 0%;
+}
+.circulos .circulo2 .path {
+  fill: skyblue;
+}
+.circulos .circulo3 {
+  bottom: 0%;
+  left: 0%;
+}
+.circulos .circulo3 .path {
+  fill: skyblue;
+}
+.circulos .circulo4 {
+  bottom: 0%;
+  right: 0%;
+}
+.circulos .circulo4 .path {
+  fill: skyblue;
+}
+
+
+/* Agrega estas reglas CSS a tu archivo styles/globals.css */
+/* Estilo para navegadores basados en WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background:  #1D1D1D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #777;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #494647;
+}
+
+/* Estilo para Firefox
+scrollbar-width: thin;
+scrollbar-color: #888 #f1f1f1; */
+
+/* Aplicando estilos a un contenedor específico */
+.custom-scrollbar {
+  overflow-y: scroll;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+  border: 3px solid #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
