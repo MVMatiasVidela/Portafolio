@@ -2,7 +2,7 @@ import React from "react";
 
 const Technologies = () => {
   return (
-    <div className="max-w-[1000px] flex justify-center flex-col m-auto gap-4 p-4 mb-12">
+    <div className="max-w-[1000px] flex justify-center flex-col m-auto gap-4 p-4 mb-20">
       <div className="flex flex-wrap justify-evenly items-center m-4">
         <div className="flex flex-col justify-center items-center bg-transparent p-4 hover:scale-125 transition duration-300">
           <p className="text-center">HTML</p>
