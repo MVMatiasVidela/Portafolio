@@ -4,7 +4,7 @@ import "./globals.css";
 
 export default function Home() {
   return (
-    <div className="bg-black/50 p-8 h-screen">
+    <div className="bg-black/50 p-8 ">
       <HomeContainer />
     </div>
   );
