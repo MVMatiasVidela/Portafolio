@@ -2,13 +2,10 @@ import React from "react";
 
 const Technologies = () => {
   return (
-    <div
-      className="max-w-[1000px] flex justify-center flex-col  m-auto gap-4 "
-    >
-
-      <div className="flex flex-wrap justify-evenly items-center p-4 m-4">
-        <div className="flex flex-col justify-center bg-transparent items-center p-4 hover:scale-125 transition duration-300">
-          <p>HTML</p>
+    <div className="max-w-[1000px] flex justify-center flex-col m-auto gap-4 p-4">
+      <div className="flex flex-wrap justify-evenly items-center m-4">
+        <div className="flex flex-col justify-center items-center bg-transparent p-4 hover:scale-125 transition duration-300">
+          <p className="text-center">HTML</p>
           <img
             width="64"
             height="64"
@@ -16,8 +13,8 @@ const Technologies = () => {
             alt="html-5--v1"
           />
         </div>
-        <div className="flex flex-col justify-center items-center  p-4 hover:scale-125 transition duration-300">
-          <p>CSS</p>
+        <div className="flex flex-col justify-center items-center p-4 hover:scale-125 transition duration-300">
+          <p className="text-center">CSS</p>
           <img
             width="64"
             height="64"
@@ -25,8 +22,8 @@ const Technologies = () => {
             alt="css3"
           />
         </div>
-        <div className="flex flex-col justify-center items-center  p-4 hover:scale-125 transition duration-300">
-          <p>JAVASCRIPT</p>
+        <div className="flex flex-col justify-center items-center p-4 hover:scale-125 transition duration-300">
+          <p className="text-center">JAVASCRIPT</p>
           <img
             width="64"
             height="64"
@@ -34,8 +31,8 @@ const Technologies = () => {
             alt="javascript--v1"
           />
         </div>
-        <div className="flex flex-col justify-center items-center  p-4 hover:scale-125 transition duration-300">
-          <p>TYPESCRIPT</p>
+        <div className="flex flex-col justify-center items-center p-4 hover:scale-125 transition duration-300">
+          <p className="text-center">TYPESCRIPT</p>
           <img
             width="64"
             height="64"
@@ -43,8 +40,8 @@ const Technologies = () => {
             alt="typescript"
           />
         </div>
-        <div className="flex flex-col justify-center items-center  p-4 hover:scale-125 transition duration-300">
-          <p>NEXT</p>
+        <div className="flex flex-col justify-center items-center p-4 hover:scale-125 transition duration-300">
+          <p className="text-center">NEXT</p>
           <img
             width="64"
             height="64"
@@ -52,8 +49,8 @@ const Technologies = () => {
             alt="nextjs"
           />
         </div>
-        <div className="flex flex-col justify-center items-center  p-4 hover:scale-125 transition duration-300">
-          <p>REACT</p>
+        <div className="flex flex-col justify-center items-center p-4 hover:scale-125 transition duration-300">
+          <p className="text-center">REACT</p>
           <img
             width="64"
             height="64"
@@ -61,8 +58,8 @@ const Technologies = () => {
             alt="react-native"
           />
         </div>
-        <div className="flex flex-col justify-center items-center  p-4 hover:scale-125 transition duration-300">
-          <p>TAILWIND</p>
+        <div className="flex flex-col justify-center items-center p-4 hover:scale-125 transition duration-300">
+          <p className="text-center">TAILWIND</p>
           <img
             width="64"
             height="64"
@@ -71,7 +68,7 @@ const Technologies = () => {
           />
         </div>
         <div className="flex flex-col justify-center items-center p-4 hover:scale-125 transition duration-300">
-          <p>NODE JS</p>
+          <p className="text-center">NODE JS</p>
           <img
             width="64"
             height="64"
