@@ -3,10 +3,8 @@ import React from "react";
 const Technologies = () => {
   return (
     <div
-      className="max-w-[1000px]  border-t  flex justify-center flex-col mb-[100px] m-auto gap-4 mt-[250px]"
-      id="sobre-mi"
+      className="max-w-[1000px] flex justify-center flex-col  m-auto gap-4 "
     >
-      <h1 className="text-2xl">Tecnologías</h1>
 
       <div className="flex flex-wrap justify-evenly items-center p-4 m-4">
         <div className="flex flex-col justify-center bg-transparent items-center p-4 hover:scale-125 transition duration-300">

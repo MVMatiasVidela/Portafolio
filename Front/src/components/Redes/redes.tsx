@@ -3,61 +3,38 @@ import React from 'react'
 
 const Reds = () => {
   return (
-    <div className="flex flex-col mt-[175px]  ml-12  fixed">
-      {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="30"
-        height="30"
-        viewBox="0 0 30 30"
-        className="mb-4 fill-current text-white hover:scale-125 transition duration-300"
-      >
-        <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
-      </svg> */}
-      {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="30"
-        height="30"
-        viewBox="0 0 30 30"
-        className="mb-4 fill-current text-white hover:scale-125 transition duration-300"
-      >
-        <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6C26,4.895,25.104,4,24,4z"></path>
-      </svg> */}
-<Link href="mailto:matias.damian.vi@gmail.com?subject=Consulta%20desde%20el%20sitio%20web&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre...">
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="30"
-        height="25"
-        viewBox="0,0,256,256"
-        className="mb-4 fill-current text-white hover:scale-125 transition duration-300"
-      >
-        <g
-          fill="#ffffff"
-          fill-rule="nonzero"
-          stroke="none"
-          stroke-width="1"
-          stroke-linecap="butt"
-          stroke-linejoin="miter"
-          stroke-miterlimit="10"
-          stroke-dasharray=""
-          stroke-dashoffset="0"
-          font-family="none"
-          font-weight="none"
-          font-size="none"
-          text-anchor="none"
+    <div className="flex flex-col mt-[175px] ml-4 sm:ml-6 md:ml-12 fixed">
+      <Link href="mailto:matias.damian.vi@gmail.com?subject=Consulta%20desde%20el%20sitio%20web&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre...">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="30"
+          height="25"
+          viewBox="0,0,256,256"
+          className="mb-4 fill-current text-white hover:scale-125 transition duration-300"
         >
-          <g transform="scale(5.12,5.12)">
-            <path d="M12,23.403v-0.013v-13.001l-0.12,-0.089h-0.01l-2.73,-2.02c-1.67,-1.24 -4.05,-1.18 -5.53,0.28c-0.99,0.98 -1.61,2.34 -1.61,3.85v3.602zM38,23.39v0.013l10,-7.391v-3.602c0,-1.49 -0.6,-2.85 -1.58,-3.83c-1.46,-1.457 -3.765,-1.628 -5.424,-0.403l-2.876,2.123l-0.12,0.089zM14,24.868l10.406,7.692c0.353,0.261 0.836,0.261 1.189,0l10.405,-7.692v-13.001l-11,8.133l-11,-8.133zM38,25.889v15.111c0,0.552 0.448,1 1,1h6.5c1.381,0 2.5,-1.119 2.5,-2.5v-21.003zM12,25.889l-10,-7.392v21.003c0,1.381 1.119,2.5 2.5,2.5h6.5c0.552,0 1,-0.448 1,-1z"></path>
+          <g
+            fill="#ffffff"
+            fill-rule="nonzero"
+            stroke="none"
+            stroke-width="1"
+            stroke-linecap="butt"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            stroke-dasharray=""
+            stroke-dashoffset="0"
+            font-family="none"
+            font-weight="none"
+            font-size="none"
+            text-anchor="none"
+          >
+            <g transform="scale(5.12,5.12)">
+              <path d="M12,23.403v-0.013v-13.001l-0.12,-0.089h-0.01l-2.73,-2.02c-1.67,-1.24 -4.05,-1.18 -5.53,0.28c-0.99,0.98 -1.61,2.34 -1.61,3.85v3.602zM38,23.39v0.013l10,-7.391v-3.602c0,-1.49 -0.6,-2.85 -1.58,-3.83c-1.46,-1.457 -3.765,-1.628 -5.424,-0.403l-2.876,2.123l-0.12,0.089zM14,24.868l10.406,7.692c0.353,0.261 0.836,0.261 1.189,0l10.405,-7.692v-13.001l-11,8.133l-11,-8.133zM38,25.889v15.111c0,0.552 0.448,1 1,1h6.5c1.381,0 2.5,-1.119 2.5,-2.5v-21.003zM12,25.889l-10,-7.392v21.003c0,1.381 1.119,2.5 2.5,2.5h6.5c0.552,0 1,-0.448 1,-1z"></path>
+            </g>
           </g>
-        </g>
-      </svg>
-</Link>
+        </svg>
+      </Link>
 
       <Link href="https://www.youtube.com/channel/UC7kEf36fUHfsP8msa6oiygA">
         <svg

@@ -5,9 +5,9 @@ import React, { useState } from "react";
 import Modal from "@/components/Modal/Modal";
 
 const Experience = () => {
-  const [openModalIndex, setOpenModalIndex] = useState(null);
+  const [openModalIndex, setOpenModalIndex] = useState<number | null>(null);
 
-  const openModal = (index:any) => {
+  const openModal = (index: number) => {
     setOpenModalIndex(index);
   };
 
@@ -16,9 +16,9 @@ const Experience = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center gap-8 w-[80%] m-auto ">
-      <div className="flex  gap-4 w-[80%] bg-darkD-500 rounded">
-        <div>
+    <div className="flex flex-col p-8 justify-center items-center gap-8 w-full sm:w-[80%] m-auto">
+      <div className="flex flex-col sm:flex-row gap-4 w-full bg-darkD-500 rounded">
+        <div className="w-full sm:w-1/3">
           <Image
             className="rounded"
             src="/images/henry1.png"
@@ -27,7 +27,7 @@ const Experience = () => {
             height={300}
           />
         </div>
-        <div className="space-y-4 p-4">
+        <div className="w-full sm:w-2/3 space-y-4 p-4">
           <div>
             <h1 className="text-[20px]">
               Desarrollo FullStack | Bootcamp Soy Henry.
@@ -68,8 +68,8 @@ const Experience = () => {
         </div>
       </div>
 
-      <div className="flex gap-4 w-[80%] bg-darkD-500 rounded">
-        <div>
+      <div className="flex flex-col sm:flex-row gap-4 w-full bg-darkD-500 rounded">
+        <div className="w-full sm:w-1/3">
           <Image
             className="rounded"
             src="/images/latam1.png"
@@ -78,7 +78,7 @@ const Experience = () => {
             height={300}
           />
         </div>
-        <div className="space-y-4 p-4">
+        <div className="w-full sm:w-2/3 space-y-4 p-4">
           <div>
             <h1 className="text-[20px]">Taller Figma | Desafio Latam</h1>
             <p className="text-darkD-400">Julio 2024 - Agosto 2024</p>
@@ -94,7 +94,7 @@ const Experience = () => {
             </Modal>
           </div>
           <div>
-            <h1 className="text-[20px]">Taller Diseño UX/UI| Desafio Latam</h1>
+            <h1 className="text-[20px]">Taller Diseño UX/UI | Desafio Latam</h1>
             <p className="text-darkD-400">Julio 2024 - Agosto 2024</p>
             <p
               onClick={() => openModal(3)}
@@ -110,6 +110,20 @@ const Experience = () => {
                 src="/images/introUX-UI.png"
                 alt="Certificado"
               />
+            </Modal>
+          </div>
+          <div>
+            <h1 className="text-[20px]">Bases de Github | Desafio Latam</h1>
+            <p className="text-darkD-400">Julio 2024 - Agosto 2024</p>
+            <p
+              onClick={() => openModal(4)}
+              className="cursor-pointer text-blue-500"
+            >
+              Ver certificado
+            </p>
+
+            <Modal isOpen={openModalIndex === 4} onClose={closeModal}>
+              <Image width="700" height="600" src="/images/certificadoLatamGIT.jpg" alt="Certificado" />
             </Modal>
           </div>
         </div>
