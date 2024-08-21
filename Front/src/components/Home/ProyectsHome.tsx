@@ -27,7 +27,7 @@ const ProyectsHome = () => {
       </Link>
       <div className="rounded bg-black/30 flex justify-center flex-col m-auto gap-4 p-8 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50 h-[300px]">
         <h2 className="text-[30px] font-semibold text-center">
-          Proyecto Final "Dentall"
+          Proyecto Final Dentall
         </h2>
         <p className="text-[20px] text-darkD-300 text-center">
           Este proyecto fue realizado como proyecto final en el bootcamp Soy
@@ -37,7 +37,7 @@ const ProyectsHome = () => {
       </div>
       <div className="rounded bg-black/30 flex justify-center flex-col m-auto gap-4 p-8 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50 h-[300px]">
         <h2 className="text-[30px] font-semibold text-center">
-          Proyecto Integrador "Technovid"
+          Proyecto Integrador Technovid
         </h2>
         <p className="text-[20px] text-darkD-300 text-center">
           Este proyecto fue realizado como proyecto final en el bootcamp Soy
