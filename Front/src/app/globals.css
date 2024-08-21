@@ -67,28 +67,28 @@ body {
   left: 0%;
 }
 .circulos .circulo1 .path {
-  fill: skyblue;
+  fill: rgb(77, 34, 152);
 }
 .circulos .circulo2 {
   top: 0%;
   right: 0%;
 }
 .circulos .circulo2 .path {
-  fill: skyblue;
+  fill: rgb(34, 46, 152);
 }
 .circulos .circulo3 {
   bottom: 0%;
   left: 0%;
 }
 .circulos .circulo3 .path {
-  fill: skyblue;
+  fill: rgb(77, 34, 152);
 }
 .circulos .circulo4 {
   bottom: 0%;
   right: 0%;
 }
 .circulos .circulo4 .path {
-  fill: skyblue;
+  fill: rgb(34, 46, 152);
 }
 
 

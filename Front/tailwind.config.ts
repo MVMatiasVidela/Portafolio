@@ -48,6 +48,7 @@ const config: Config = {
     },
   },
   plugins: [
+    require("tailwindcss-filters"),
     function ({ addUtilities }: PluginAPI) {
       addUtilities({
         ".mix-blend-difference": {

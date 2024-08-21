@@ -4,7 +4,7 @@ import React from "react";
 const MadeWith = () => {
   return (
     <div className="flex justify-center space-x-2">
-      <h1 className="text-white flex items-center">Hecho con:</h1>
+      <h1 className="text-white text-[20px] flex items-center">Hecho con:</h1>
       <Image
         width={40}
         height={40}

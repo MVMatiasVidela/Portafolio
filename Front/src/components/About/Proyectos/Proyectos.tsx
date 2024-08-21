@@ -1,10 +1,10 @@
 import React from "react";
-import YouTubeVideo from "../Video/YouTubeVideo";
+import YouTubeVideo from "../../Video/YouTubeVideo";
 
 const Proyectos = () => {
   return (
     <div className="m-auto p-8 text-white flex flex-col gap-4">
-      <div className="w-full sm:w-[90%] m-auto flex flex-col sm:flex-row bg-darkD-500 rounded">
+      <div className="w-full sm:w-[90%] m-auto flex flex-col sm:flex-row bg-black/60 rounded">
         <div className="rounded-xl w-full sm:w-[50%] p-2">
           <YouTubeVideo videoId="z2XJa-aqo54" />
         </div>
@@ -26,13 +26,12 @@ const Proyectos = () => {
             <ul className="list-disc text-start">
               <p className="font-semibold">BASE DE DATOS</p>
               <li>SQL</li>
-              
             </ul>
           </div>
         </div>
       </div>
 
-      <div className="w-full sm:w-[90%] m-auto flex flex-col sm:flex-row bg-darkD-500 rounded">
+      <div className="w-full sm:w-[90%] m-auto flex flex-col sm:flex-row bg-black/60 rounded">
         <div className=" w-full sm:w-[50%] p-2">
           <YouTubeVideo videoId="RJBqfHenyj4" />
         </div>
@@ -49,7 +48,6 @@ const Proyectos = () => {
             <ul className="list-disc text-start">
               <p className="font-semibold">BASE DE DATOS</p>
               <li>SQL</li>
-              
             </ul>
           </div>
         </div>

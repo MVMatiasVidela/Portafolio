@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Proza_Libre, League_Gothic } from "next/font/google";
+import { Proza_Libre, League_Gothic, Roboto, Dosis, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/navbar";
 import Footer from "@/components/Footer/footer";
-import Reds from "@/components/Redes/redes";
+import Reds from "@/components/Home/Redes/redes";
 import Head from "next/head";
 import Script from "next/script";
 
 const proza = Proza_Libre({ weight: "600", subsets: ["latin"] });
+const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 const league = League_Gothic({ weight: "variable", subsets: ["latin"] });
+const dosis = Dosis({ weight: "variable", subsets: ["latin"] });
+const inter = Inter({ weight: "variable", subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
@@ -22,12 +25,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <body className={proza.className}>
+      <body className={inter.className}>
         <div className="circulos ">
           <svg
             className="circulo circulo1"

@@ -17,7 +17,7 @@ const Experience = () => {
 
   return (
     <div className="flex flex-col p-8 justify-center items-center gap-8 w-full sm:w-[80%] m-auto">
-      <div className="flex flex-col sm:flex-row gap-4 w-full bg-darkD-500 rounded">
+      <div className="flex flex-col sm:flex-row gap-4 w-full bg-black/60 rounded">
         <div className="w-full sm:w-1/3">
           <Image
             className="rounded"
@@ -68,7 +68,7 @@ const Experience = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-4 w-full bg-darkD-500 rounded">
+      <div className="flex flex-col sm:flex-row gap-4 w-full bg-black/60 rounded">
         <div className="w-full sm:w-1/3">
           <Image
             className="rounded"
@@ -123,7 +123,12 @@ const Experience = () => {
             </p>
 
             <Modal isOpen={openModalIndex === 4} onClose={closeModal}>
-              <Image width="700" height="600" src="/images/certificadoLatamGIT.jpg" alt="Certificado" />
+              <Image
+                width="700"
+                height="600"
+                src="/images/certificadoLatamGIT.jpg"
+                alt="Certificado"
+              />
             </Modal>
           </div>
         </div>
