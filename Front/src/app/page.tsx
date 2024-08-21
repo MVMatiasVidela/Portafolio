@@ -8,6 +8,7 @@ import Info from "@/components/Home/Info";
 
 export default function Home() {
   return (
+
     <div className="bg-black/50 p-8">
       <div>
         <Title />
@@ -29,6 +30,7 @@ export default function Home() {
         <p>Mis ideas te haran volar. </p>
         <Cv />
       </div>
+
     </div>
   );
 }

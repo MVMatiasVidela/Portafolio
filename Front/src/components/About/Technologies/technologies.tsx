@@ -3,6 +3,7 @@ import React from "react";
 
 const Technologies = () => {
   return (
+
     <div className=" rounded bg-black/30 flex justify-center flex-col m-auto gap-4 p-8 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50">
       <div className="m-4 p-4 ">
         <h2 className="text-[30px] font-semibold">Tecnologías</h2>
@@ -14,6 +15,7 @@ const Technologies = () => {
       <div className="flex flex-wrap justify-evenly items-center ">
         <div className="flex flex-col justify-center items-center p-4 hover:scale-125 transition duration-300">
           <Image
+
             width="64"
             height="64"
             src="https://img.icons8.com/color/48/000000/html-5--v1.png"
