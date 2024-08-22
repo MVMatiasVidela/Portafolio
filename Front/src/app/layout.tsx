@@ -7,6 +7,7 @@ import Reds from "@/components/Home/Redes/redes";
 import Head from "next/head";
 import Script from "next/script";
 
+
 const proza = Proza_Libre({ weight: "600", subsets: ["latin"] });
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 const league = League_Gothic({ weight: "variable", subsets: ["latin"] });
@@ -79,7 +80,9 @@ export default function RootLayout({
         </div>
         <Navbar />
         <Reds />
+        
         {children}
+
         <Footer />
         <div id="cursor"></div>
 

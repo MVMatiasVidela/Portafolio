@@ -39,7 +39,7 @@ const TA = () => {
         <div className="justify-center items-center flex hover:scale-125 transition duration-300 mt-8">
           <Image
             className="rounded"
-            src="/images/henri.png"
+            src="/images/Henri.png"
             alt="Henry"
             width={250}
             height={200}

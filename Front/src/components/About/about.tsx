@@ -42,7 +42,11 @@ const About = () => {
         <Habilidades />
       </div>
       <div className="flex flex-col items-center m-[100px]">
-        <p className="text-[30px] font-semibold">¿Te interesa contratarme?</p>
+        <p className="text-[40px] font-semibold">¿Te interesa contratarme?</p>
+        <p className="text-[20px] mt-4 text-center">
+          ¡Hablemos y exploremos cómo puedo aportar valor a tu equipo!
+        </p>
+
         <Cv />
       </div>
     </div>

@@ -8,7 +8,6 @@ import Info from "@/components/Home/Info";
 
 export default function Home() {
   return (
-
     <div className="bg-black/50 p-8">
       <div>
         <Title />
@@ -26,11 +25,13 @@ export default function Home() {
         <Technologies />
       </div> */}
       <div className="flex flex-col items-center m-[100px]">
-        <p className="text-[30px] font-semibold">¿Te interesa contratarme?</p>
-        <p>Mis ideas te haran volar. </p>
+        <p className="text-[40px] font-semibold">¿Te interesa contratarme?</p>
+        <p className="text-[20px] mt-4 text-center">
+          ¡Hablemos y exploremos cómo puedo aportar valor a tu equipo!
+        </p>
+
         <Cv />
       </div>
-
     </div>
   );
 }
