@@ -12,14 +12,14 @@ const About = () => {
   return (
     <div>
       <div className="w-[80%] m-auto flex  p-4 mt-[100px]">
-        <h2 className="text-center text-[40px] font-medium">
+        <h2 className="text-center text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-medium">
           Soy un desarrollador Full Stack Junior, me apasiona la programación
           tanto como la musica.{" "}
         </h2>
       </div>
 
       <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12  m-auto">
-        <div className="space-y-12" >
+        <div className="space-y-12">
           <div>
             <TA />
           </div>
@@ -38,9 +38,9 @@ const About = () => {
           <Herramientas />
         </div>
       </div>
-        <div>
-          <Habilidades />
-        </div>
+      <div>
+        <Habilidades />
+      </div>
       <div className="flex flex-col items-center m-[100px]">
         <p className="text-[30px] font-semibold">¿Te interesa contratarme?</p>
         <Cv />

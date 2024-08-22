@@ -11,11 +11,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-black/70 backdrop-blur-md flex flex-col sm:flex-row justify-between w-full border-b  fixed">
+    <div className="bg-black/70 backdrop-blur-md flex flex-col sm:flex-row justify-between w-full border-b z-50 fixed">
       <div className="m-4 ml-10 flex items-center justify-between sm:justify-center">
         <Image width={100} height={100} alt="Logo" src="/images/logo.png" />
         <button
-          className="sm:hidden text-sky-200 text-xl p-2"
+          className="sm:hidden  text-xl p-2"
           onClick={toggleMenu}
         >
           &#9776;
@@ -28,10 +28,10 @@ const Navbar = () => {
       >
         <ul className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8">
           <Link href="/">
-            <li className="hover:scale-110 transition duration-300">Inicio</li>
+            <li className="hover:scale-125 transition duration-300">Inicio</li>
           </Link>
           <Link href="/about">
-            <li className="hover:scale-110 transition duration-300">
+            <li className="hover:scale-125 transition duration-300">
               Sobre mí
             </li>
           </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
             </li>
           </Link> */}
           <Link href="/proyects">
-            <li className="hover:scale-110 transition duration-300">
+            <li className="hover:scale-125 transition duration-300">
               Proyectos
             </li>
           </Link>

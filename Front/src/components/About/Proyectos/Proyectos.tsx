@@ -3,7 +3,11 @@ import YouTubeVideo from "../../Video/YouTubeVideo";
 
 const Proyectos = () => {
   return (
-    <div className="m-auto p-8 text-white flex flex-col gap-4">
+    <div className="m-auto p-8 text-white flex flex-col gap-4 mt-[100px]">
+      <h2 className="text-center text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-medium">
+        Mis proyectos
+      </h2>
+
       <div className="w-full sm:w-[90%] m-auto flex flex-col sm:flex-row bg-black/60 rounded">
         <div className="rounded-xl w-full sm:w-[50%] p-2">
           <YouTubeVideo videoId="z2XJa-aqo54" />
