@@ -35,6 +35,11 @@ const Navbar = () => {
               Sobre mí
             </li>
           </Link>
+          <Link href="/cursos">
+            <li className="hover:scale-125 transition duration-300">
+              Cursos
+            </li>
+          </Link>
           {/* <Link href="/technologies">
             <li className="hover:scale-110 transition duration-300">
               Tecnologías

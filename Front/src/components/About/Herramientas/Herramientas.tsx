@@ -1,3 +1,4 @@
+import OrbitingCirclesDemo from "@/components/magicui/Orbit/circles";
 import Image from "next/image";
 import React from "react";
 
@@ -5,13 +6,14 @@ const Herramientas = () => {
   return (
     <div className=" rounded bg-black/30 flex justify-center flex-col m-auto gap-4 p-8 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50">
       <div className="m-4 p-4">
-        <h2 className="text-[30px] font-semibold">Herramientas</h2>
-        <p className="text-[20px] text-darkD-300">
+        <h2 className="text-[30px] font-bold">Herramientas</h2>
+        <p className="text-[20px] text-darkD-300 font-medium">
           Ademas tengo amplios conocimientos en herramientas como Git, Figma,
           Cloudinary, Trello, Vercel.
         </p>
       </div>
-      <div className="flex flex-wrap justify-evenly items-center ">
+      <OrbitingCirclesDemo />
+      {/* <div className="flex flex-wrap justify-evenly items-center ">
         <div className="flex flex-col justify-center items-center bg-transparent p-4 hover:scale-125 transition duration-300">
           <Image
             width="64"
@@ -45,14 +47,9 @@ const Herramientas = () => {
           />
         </div>
         <div className="flex flex-col justify-center items-center p-4 hover:scale-125 transition duration-300">
-          <Image
-            width="55"
-            height="55"
-            src="/images/vercel.svg"
-            alt="Vercel"
-          />
+          <Image width="55" height="55" src="/images/vercel.svg" alt="Vercel" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

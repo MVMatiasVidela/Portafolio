@@ -7,12 +7,10 @@ const Info = () => {
     <div className="w-[80%] sm:w-[86%] rounded bg-black/30 flex flex-col sm:flex-row justify-center m-auto gap-4 p-4 sm:p-8 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50 mt-[50px] sm:mt-[150px]">
       <div className="flex-1">
         <div>
-          <h2 className="text-[24px] sm:text-[30px] font-semibold">
-            Programación, diseño
-          </h2>
+          <h2 className="text-[24px] sm:text-[30px] font-bold">Programación</h2>
         </div>
         <div className="w-[100%] sm:w-[80%]">
-          <p className="text-[16px] sm:text-[20px] text-darkD-300">
+          <p className="text-[16px] sm:text-[20px] text-darkD-300 font-medium">
             En cada proyecto que emprendo, mi propósito es fusionar de manera
             equilibrada la estética, la funcionalidad y la eficiencia, para
             ofrecer soluciones que no solo cubran las necesidades del usuario,

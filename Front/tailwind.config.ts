@@ -1,72 +1,147 @@
-import type { Config } from "tailwindcss";
-import type { PluginAPI } from "tailwindcss/types/config";
+import type { Config } from 'tailwindcss';
 
-const config: Config = {
+const config = {
+  darkMode: ['class'],
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
+  prefix: '',
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     extend: {
       colors: {
-        greenD: {
-          100: "#CAFCD9",
-          200: "#96FABE",
-          300: "#60F0A8",
-          400: "#38E19E",
-          500: "#00CE90",
-          600: "#1A9850",
-          700: "#009484",
-          800: "#007776",
-          900: "#005962",
+        border: 'hsl(var(--border))',
+        input: 'hsl(var(--input))',
+        ring: 'hsl(var(--ring))',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
         },
-        darkD: {
-          100: "#F3F3F3",
-          200: "#E8E8E8",
-          300: "#BBB",
-          400: "#777",
-          500: "#1D1D1D",
-          600: "#181515",
-          700: "#140E0F",
-          800: "#10090B",
-          900: "#0D0508",
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
+        },
+        destructive: {
+          DEFAULT: 'hsl(var(--destructive))',
+          foreground: 'hsl(var(--destructive-foreground))',
+        },
+        muted: {
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))',
+        },
+        accent: {
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
+        },
+        popover: {
+          DEFAULT: 'hsl(var(--popover))',
+          foreground: 'hsl(var(--popover-foreground))',
+        },
+        card: {
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))',
+        },
+        // Nuevos colores agregados
+        'color-1': 'hsl(var(--color-1))',
+        'color-2': 'hsl(var(--color-2))',
+        'color-3': 'hsl(var(--color-3))',
+        'color-4': 'hsl(var(--color-4))',
+        'color-5': 'hsl(var(--color-5))',
+      },
+      borderRadius: {
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
+      },
+      keyframes: {
+        'accordion-down': {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
+        },
+        orbit: {
+          '0%': {
+            transform:
+              'rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)',
+          },
+          '100%': {
+            transform:
+              'rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)',
+          },
+        },
+        shimmer: {
+          '0%, 90%, 100%': {
+            'background-position': 'calc(-100% - var(--shimmer-width)) 0',
+          },
+          '30%, 60%': {
+            'background-position': 'calc(100% + var(--shimmer-width)) 0',
+          },
+        },
+        'border-beam': {
+          '100%': {
+            'offset-distance': '100%',
+          },
+        },
+        'background-position-spin': {
+          '0%': { backgroundPosition: 'top center' },
+          '100%': { backgroundPosition: 'bottom center' },
+        },
+        // Animaciones previamente agregadas
+        'spin-around': {
+          '0%': {
+            transform: 'translateZ(0) rotate(0)',
+          },
+          '15%, 35%': {
+            transform: 'translateZ(0) rotate(90deg)',
+          },
+          '65%, 85%': {
+            transform: 'translateZ(0) rotate(270deg)',
+          },
+          '100%': {
+            transform: 'translateZ(0) rotate(360deg)',
+          },
+        },
+        slide: {
+          to: {
+            transform: 'translate(calc(100cqw - 100%), 0)',
+          },
+        },
+        // Nueva animación "rainbow" agregada
+        rainbow: {
+          '0%': { 'background-position': '0%' },
+          '100%': { 'background-position': '200%' },
         },
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      mixBlendMode: {
-        difference: "difference",
-        screen: "screen",
-        multiply: "multiply",
-        overlay: "overlay",
-        // Agrega más blend modes si es necesario
+      animation: {
+        backgroundPositionSpin:
+          'background-position-spin 3000ms infinite alternate',
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
+        'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
+        orbit: 'orbit calc(var(--duration)*1s) linear infinite',
+        shimmer: 'shimmer 8s infinite',
+        'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
+        slide: 'slide var(--speed) ease-in-out infinite alternate',
+        // Nueva animación "rainbow"
+        rainbow: 'rainbow var(--speed, 2s) infinite linear',
       },
     },
   },
-  plugins: [
-    require("tailwindcss-filters"),
-    function ({ addUtilities }: PluginAPI) {
-      addUtilities({
-        ".mix-blend-difference": {
-          mixBlendMode: "difference",
-        },
-        ".mix-blend-screen": {
-          mixBlendMode: "screen",
-        },
-        ".mix-blend-multiply": {
-          mixBlendMode: "multiply",
-        },
-        ".mix-blend-overlay": {
-          mixBlendMode: "overlay",
-        },
-        // Añadir más clases utilitarias para otros blend modes si es necesario
-      });
-    },
-  ],
-};
+  plugins: [require('tailwindcss-animate')],
+} satisfies Config;
 
 export default config;

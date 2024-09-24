@@ -1,10 +1,9 @@
-import "./globals.css";
-import Title from "@/components/Home/Title/title";
-import Technologies from "@/components/About/Technologies/technologies";
-import Carousel from "@/components/Carousel/Carousel";
-import Cv from "@/components/CV/Cv";
-import ProyectsHome from "@/components/Home/ProyectsHome";
-import Info from "@/components/Home/Info";
+import './globals.css';
+import Title from '@/components/Home/Title/title';
+
+import Cv from '@/components/CV/Cv';
+import ProyectsHome from '@/components/Home/ProyectsHome';
+import Info from '@/components/Home/Info';
 
 export default function Home() {
   return (
@@ -18,12 +17,6 @@ export default function Home() {
       <div>
         <ProyectsHome />
       </div>
-      {/* <div>
-        <Carousel />
-      </div> */}
-      {/* <div>
-        <Technologies />
-      </div> */}
       <div className="flex flex-col items-center m-[100px]">
         <p className="text-[40px] font-semibold">¿Te interesa contratarme?</p>
         <p className="text-[20px] mt-4 text-center">

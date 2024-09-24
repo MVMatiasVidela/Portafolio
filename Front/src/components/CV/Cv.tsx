@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import ShimmerButton from "../magicui/buton/shimmer-button";
+import { RainbowButton } from "../magicui/rainButon/rainbow-button";
 
 const Cv = () => {
   return (
@@ -10,9 +12,14 @@ const Cv = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <div className="rounded border font-medium text-center p-3 sm:p-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50">
+          <ShimmerButton className="shadow-2xl">
+            <div className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50">
+              Contáctame
+            </div>
+          </ShimmerButton>
+          {/* <div className="rounded border font-semibold text-center p-3 sm:p-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50">
             Contáctame
-          </div>
+          </div> */}
         </Link>
       </div>
       <div className="flex justify-center">
@@ -21,9 +28,8 @@ const Cv = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="rounded border font-medium text-center p-3 sm:p-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50">
-            Descargar CV
-          </div>
+          <RainbowButton> Descargar CV</RainbowButton>
+          {/* <div className="rounded border font-semibold text-center p-3 sm:p-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50"></div> */}
         </Link>
       </div>
     </div>

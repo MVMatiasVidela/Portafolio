@@ -21,29 +21,29 @@ const ProyectsHome = () => {
             />
           </div>
           <p className="text-[18px] sm:text-[20px] text-darkD-300 text-center">
-            Plataforma E-Commerce para venta de productos electrónicos.
+            Sistema de gestion de turnos para clinicas.
           </p>
         </div>
       </Link>
 
       <div className="rounded bg-black/30 flex justify-center flex-col gap-4 p-6 sm:p-8 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50 h-[280px] sm:h-[300px]">
-        <h2 className="text-[24px] sm:text-[30px] font-semibold text-center">
-          Proyecto Final Dentall
+        <h2 className="text-[24px] sm:text-[30px] font-bold text-start">
+          Proyecto Dentall
         </h2>
-        <p className="text-[18px] sm:text-[20px] text-darkD-300 text-center">
-          Este proyecto fue realizado como proyecto final en Soy
-          Henry con un grupo excelente de compañeros de los cuales también logré
-          aprender mucho.
+        <p className="text-[18px] sm:text-[20px] text-darkD-300 text-start font-medium">
+          Este proyecto fue realizado como proyecto final en Soy Henry con un
+          grupo excelente de compañeros de los cuales también logré aprender
+          mucho.
         </p>
       </div>
 
       <div className="rounded bg-black/30 flex justify-center flex-col gap-4 p-6 sm:p-8 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50 h-[280px] sm:h-[300px]">
-        <h2 className="text-[24px] sm:text-[30px] font-semibold text-center">
-          Proyecto Integrador Technovid
+        <h2 className="text-[24px] sm:text-[30px] font-bold text-end">
+          Proyecto Technovid
         </h2>
-        <p className="text-[18px] sm:text-[20px] text-darkD-300 text-center">
-          Este proyecto fue realizado como proyecto integrador en
-          Soy Henry donde elegí la especialización como Front-end.
+        <p className="text-[18px] sm:text-[20px] text-darkD-300 text-end font-medium">
+          Este proyecto fue realizado como proyecto integrador en Soy Henry
+          donde elegí la especialización como Front-end.
         </p>
       </div>
 
@@ -62,8 +62,8 @@ const ProyectsHome = () => {
               height={200}
             />
           </div>
-          <p className="text-[18px] sm:text-[20px] text-darkD-300 text-center">
-            Plataforma E-Commerce para venta de productos electrónicos.
+          <p className="text-[18px] sm:text-[20px] text-darkD-300 text-center font-medium">
+            E-Commerce para venta de productos electrónicos.
           </p>
         </div>
       </Link>
