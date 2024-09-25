@@ -1,6 +1,6 @@
 // src/components/MaintenanceMode.tsx
 
-'use client'; // Esto asegura que este componente sea un componente de cliente
+'use client';
 
 import { useEffect, useState } from 'react';
 import MaintenancePage from '@/components/MaintenanceMode/MaintenancePage'; // Asegúrate de tener este componente creado
@@ -10,7 +10,8 @@ const MaintenanceMode = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     // Cambia esto según cómo determines el modo de mantenimiento
-    setIsUnderMaintenance(process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true');
+    const maintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
+    setIsUnderMaintenance(maintenanceMode);
   }, []);
 
   if (isUnderMaintenance) {
