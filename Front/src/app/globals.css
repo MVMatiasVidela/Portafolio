@@ -102,21 +102,7 @@ body {
     transform: translateY(0%);
   }
 }
-/* #cursor.mini {
-  transform: scale(0.7);
-}
-#cursor {
-  width: 1em;
-  height: 1em;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  border: 2px solid white;
-  pointer-events: none;
-  border-radius: 50%;
-} */
+
 .circulos {
   position: fixed;
   width: 100%;
