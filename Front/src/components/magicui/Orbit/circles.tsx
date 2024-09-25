@@ -3,10 +3,10 @@ import OrbitingCircles from '@/components/magicui/Orbit/orbiting-circles';
 
 export function OrbitingCirclesDemo() {
   return (
-    <div className="relative z- flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg ">
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
+    <div className="relative z-  flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg ">
+      {/* <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
         Tecnologias
-      </span>
+      </span> */}
 
       {/* Inner Circles */}
       <OrbitingCircles
