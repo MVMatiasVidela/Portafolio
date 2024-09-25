@@ -1,13 +1,13 @@
-import React from "react";
-import Experience from "./Experience/experience";
-import Technologies from "./Technologies/technologies";
-import P1 from "./Perfil/P1";
-import Cursos from "./Cursos/Cursos";
-import Herramientas from "./Herramientas/Herramientas";
-import Cv from "../CV/Cv";
-import TA from "./TA/TA";
-import Habilidades from "./Habilidades/Habilidades";
-import { BorderBeam } from "../magicui/Border/border-beam";
+import React from 'react';
+import Experience from './Experience/experience';
+import Technologies from './Technologies/technologies';
+import P1 from './Perfil/P1';
+import Cursos from './Cursos/Cursos';
+import Herramientas from './Herramientas/Herramientas';
+import Cv from '../CV/Cv';
+import TA from './TA/TA';
+import Habilidades from './Habilidades/Habilidades';
+import { BorderBeam } from '../magicui/Border/border-beam';
 
 const About = () => {
   return (
@@ -20,7 +20,7 @@ const About = () => {
       </div>
 
       <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12  m-auto">
-        <div className="space-y-12">
+        <div className="space-y-4">
           <div>
             <TA />
           </div>
@@ -41,7 +41,6 @@ const About = () => {
       </div>
       <div>
         <Habilidades />
-        <BorderBeam />
       </div>
       <div className="flex flex-col items-center m-[100px]">
         <p className="text-[40px] font-semibold">¿Te interesa contratarme?</p>
