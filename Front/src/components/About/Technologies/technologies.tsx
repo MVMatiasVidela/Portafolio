@@ -5,7 +5,7 @@ import React from "react";
 
 const Technologies = () => {
   return (
-    <div className=" rounded bg-black/30 flex justify-center flex-col m-auto gap-4 p-8 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50">
+    <div className=" rounded bg-black/30 max-h-[40em] flex justify-center flex-col m-auto gap-4  transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50">
       <div className="m-4 p-4 ">
         <h2 className="text-[30px] font-bold">Tecnologías</h2>
         <p className="text-[20px] text-darkD-300 font-medium">
