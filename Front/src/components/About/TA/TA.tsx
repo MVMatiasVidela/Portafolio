@@ -16,7 +16,7 @@ const TA = () => {
     };
 
   return (
-    <div className=" rounded bg-black/30 flex justify-center flex-col m-auto gap-4 p-8 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50">
+    <div className=" rounded bg-black/30 flex justify-center flex-col m-auto gap-4  transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50">
       <div className="m-4 p-4">
         <h2 className="text-[30px] font-bold">Teacher Assistant</h2>
         <p className="text-[20px] text-darkD-300 font-medium">
@@ -42,7 +42,7 @@ const TA = () => {
             alt="Certificado"
           />
         </Modal>
-        <div className="justify-center items-center flex hover:scale-125 transition duration-300 mt-8">
+        <div className="justify-center items-center flex hover:scale-125 transition duration-300 mt-4">
           <Image
             className="rounded"
             src="/images/Henri.png"
