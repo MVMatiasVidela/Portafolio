@@ -10,7 +10,7 @@ const Info = () => {
           <h2 className="text-[24px] sm:text-[30px] font-bold">Programación</h2>
         </div>
         <div className="w-[100%] sm:w-[80%]">
-          <p className="text-[16px] sm:text-[20px] text-darkD-300 font-medium">
+          <p className="text-[16px] sm:text-[20px] text-gray-300 font-medium">
             En cada proyecto que emprendo, mi propósito es fusionar de manera
             equilibrada la estética, la funcionalidad y la eficiencia, para
             ofrecer soluciones que no solo cubran las necesidades del usuario,
@@ -21,7 +21,7 @@ const Info = () => {
           </p>
         </div>
 
-        <div className="border  sm:w-[30%] md:w-[30%] lg:w-[30%] rounded-3xl p-1 text-center m-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50">
+        <div className="border  sm:w-[30%] md:w-[30%] lg:w-[30%] rounded-3xl p-2 text-center mt-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50">
           <Link href="/about">
             <div className="flex gap-4 justify-center items-center">
               <p>Saber más</p>
