@@ -13,6 +13,7 @@ const slugs = [
   'nodedotjs',
   'express',
   'nextdotjs',
+  'nestjs',
   // 'prisma',
   // 'amazonaws',
   'postgresql',
@@ -31,6 +32,7 @@ const slugs = [
   // 'androidstudio',
   // 'sonarqube',
   'figma',
+  'tailwindcss'
 ];
 
 export function IconCloudDemo() {
