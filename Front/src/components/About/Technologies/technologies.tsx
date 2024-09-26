@@ -5,12 +5,11 @@ import React from "react";
 
 const Technologies = () => {
   return (
-    <div className=" rounded bg-black/30 max-h-[40em] flex justify-center flex-col m-auto gap-4  transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50">
+    <div className=" rounded bg-black/30 max-h-[45em] flex justify-center flex-col m-auto gap-4  transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50">
       <div className="m-4 p-4 ">
         <h2 className="text-[30px] font-bold">Tecnologías</h2>
-        <p className="text-[20px] text-darkD-300 font-medium">
-          Hasta el día de hoy busco adquirir más habilidades y reforzar mis
-          conocimientos.
+        <p className="text-[20px] text-gray-300 font-medium">
+       Javascript, Typescript, React, SQL, Express, Node.js, 
         </p>
       </div>
       <IconCloudDemo />
