@@ -19,13 +19,12 @@ const TA = () => {
     <div className=" rounded bg-black/30 flex justify-center flex-col m-auto gap-4  transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50">
       <div className="m-4 p-4">
         <h2 className="text-[30px] font-bold">Teacher Assistant</h2>
-        <p className="text-[20px] text-darkD-300 font-medium">
+        <p className="text-[20px] text-gray-300 font-medium">
           He tenido el privilegio de compartir mis conocimientos con alumnos del
           bootcamp Me apasiona conectar con la audiencia y fomentar el
           aprendizaje colaborativo.
         </p>
-        <div className="border sm:w-[30%] md:w-[30%] lg:w-[40%] rounded-3xl p-1 text-center mt-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50">
-        
+        <div className="border sm:w-[30%] md:w-[30%] lg:w-[40%] rounded-3xl p-2 text-center mt-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50">
           <p
             onClick={() => openModal(1)}
             className="cursor-pointer font-medium"
