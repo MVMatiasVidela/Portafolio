@@ -79,7 +79,8 @@ body {
   -moz-osx-font-smoothing: inherit;
   background-color: black;
   position: relative;
-  color: white
+  color: white;
+   overflow-x: hidden;
 }
 
 
