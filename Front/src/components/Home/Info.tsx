@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
+import { BorderBeam } from '../magicui/Border/border-beam';
 
 const Info = () => {
   return (
-    <div className="w-[80%] sm:w-[86%] rounded bg-black/30 flex flex-col sm:flex-row justify-center m-auto gap-4 p-4 sm:p-8 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50 mt-[50px] sm:mt-[150px]">
+    <div className="relative w-[80%] sm:w-[86%] rounded bg-black/30 flex flex-col sm:flex-row justify-center m-auto gap-4 p-4 sm:p-8 transition-shadow duration-300 hover:shadow-lg hover:shadow-white/50 mt-[50px] sm:mt-[150px]">
+      <BorderBeam />
       <div className="flex-1">
         <div>
           <h2 className="text-[24px] sm:text-[30px] font-bold">Programación</h2>
