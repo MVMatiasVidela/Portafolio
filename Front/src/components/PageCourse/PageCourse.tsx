@@ -33,11 +33,8 @@ const PageCourse = () => {
               height={400}
             />
           </div>
-          <div className="m-auto">
-            <h2>Bootcamp Soy Henry</h2>
-            <p>Duración: 4 meses</p>
-          </div>
-          <div className="border sm:w-[30%] md:w-[30%] lg:w-[40%] rounded-3xl p-1 text-center mt-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50">
+
+          <div className="border sm:w-[30%] md:w-[30%] lg:w-[40%] rounded-3xl p-1 text-center mt-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50 m-auto">
             <p
               onClick={() => openModal(2)}
               className="cursor-pointer font-medium"
@@ -64,10 +61,8 @@ const PageCourse = () => {
               height={400}
             />
           </div>
-          <div>
-            <h2>Desarrollo web</h2>
-          </div>
-          <div className="border sm:w-[30%] md:w-[30%] lg:w-[40%] rounded-3xl p-1 text-center mt-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50">
+
+          <div className="border sm:w-[30%] md:w-[30%] lg:w-[40%] rounded-3xl p-1 text-center mt-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50 m-auto">
             <p
               onClick={() => openModal(3)}
               className="cursor-pointer font-medium"
@@ -94,10 +89,8 @@ const PageCourse = () => {
               height={400}
             />
           </div>
-          <div>
-            <h2>Gaduado como Desarrollador Full Stack Developer</h2>
-          </div>
-          <div className="border sm:w-[30%] md:w-[30%] lg:w-[40%] rounded-3xl p-1 text-center mt-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50">
+
+          <div className="border sm:w-[30%] md:w-[30%] lg:w-[40%] rounded-3xl p-1 text-center mt-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50 m-auto">
             <p
               onClick={() => openModal(4)}
               className="cursor-pointer font-medium"
@@ -124,10 +117,8 @@ const PageCourse = () => {
               height={400}
             />
           </div>
-          <div>
-            <h2>Gaduado como Desarrollador Full Stack Developer</h2>
-          </div>
-          <div className="border sm:w-[30%] md:w-[30%] lg:w-[40%] rounded-3xl p-1 text-center mt-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50">
+
+          <div className="border sm:w-[30%] md:w-[30%] lg:w-[40%] rounded-3xl p-1 text-center mt-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50 m-auto">
             <p
               onClick={() => openModal(1)}
               className="cursor-pointer font-medium"
@@ -154,10 +145,8 @@ const PageCourse = () => {
               height={400}
             />
           </div>
-          <div>
-            <h2>Gaduado como Desarrollador Full Stack Developer</h2>
-          </div>
-          <div className="border sm:w-[30%] md:w-[30%] lg:w-[40%] rounded-3xl p-1 text-center mt-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50">
+
+          <div className="border sm:w-[30%] md:w-[30%] lg:w-[40%] rounded-3xl p-1 text-center mt-4 transition-shadow duration-300 hover:shadow-lg hover:shadow-indigo-700/50 m-auto">
             <p
               onClick={() => openModal(1)}
               className="cursor-pointer font-medium"

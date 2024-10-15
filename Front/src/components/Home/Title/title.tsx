@@ -1,13 +1,33 @@
-import React from "react";
-import Image from "next/image";
-import Technologies from "../../About/Technologies/technologies";
-import Cv from "../../CV/Cv";
-import BlurFade from "@/components/magicui/blurFade/blur-fade";
-import HyperText from "@/components/magicui/hyperText/hyper-text";
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
+import React from 'react';
+import Image from 'next/image';
+import Technologies from '../../About/Technologies/technologies';
+import Cv from '../../CV/Cv';
+import BlurFade from '@/components/magicui/blurFade/blur-fade';
+import HyperText from '@/components/magicui/hyperText/hyper-text';
+import Meteors from '@/components/ui/meteors';
+import Particles from '@/components/ui/particles';
 
 const Title = () => {
+  const { theme } = useTheme();
+  const [color, setColor] = useState('#ffffff');
+
+  useEffect(() => {
+    setColor(theme === 'white' ? '#ffffff' : '#ffffff');
+  }, [theme]);
+
   return (
-    <div className="items-center justify-center  flex flex-col mt-[80px] sm:mt-[120px] w-[80%] m-auto">
+    <div className="relative items-center justify-center  flex flex-col mt-[80px] sm:mt-[120px] w-[80%] m-auto">
+      <Particles
+        className="absolute inset-0 z-0"
+        quantity={100}
+        ease={80}
+        color={color}
+        refresh
+      />
       <div>
         <BlurFade delay={0.25} inView>
           <h1 className="text-[28px] sm:text-[40px] md:text-[60px] lg:text-[80px] font-bold text-center">
@@ -20,9 +40,8 @@ const Title = () => {
           className="text-[20px] sm:text-[24px] md:text-[32px] lg:text-[40px] text-center font-semibold"
           text="Full Stack Developer"
         />
-       
       </div>
-      <div className="flex flex-wrap justify-center">
+      <div className="relative flex flex-wrap justify-center">
         <div className="flex flex-col justify-center items-center p-4 hover:scale-125 transition duration-300">
           <Image width="80" height="80" src="/images/react.svg" alt="React" />
         </div>

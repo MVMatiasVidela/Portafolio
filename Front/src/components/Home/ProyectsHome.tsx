@@ -4,7 +4,7 @@ import React from "react";
 
 const ProyectsHome = () => {
   return (
-    <div className="w-[90%] md:w-[90%] grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 p-4 sm:p-6 m-auto mt-[20px]">
+    <div className="relative w-[90%] md:w-[90%] grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 p-4 sm:p-6 m-auto mt-[20px]">
       <Link
         href="https://dent-all-black.vercel.app/"
         target="_blank"

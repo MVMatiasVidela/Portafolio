@@ -84,15 +84,16 @@ body {
 }
 
 
-/*FONDOS*/
+/* FONDOS */
 @keyframes circulo1 {
   from {
-    transform: rotate(0deg) scale(2);
+    transform: rotate(0deg) scale(1.2);
   }
   to {
-    transform: rotate(360deg) scale(2);
+    transform: rotate(360deg) scale(1.2);
   }
 }
+
 @keyframes aparecer1 {
   from {
     opacity: 0;
@@ -111,42 +112,46 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  background: black; /* Fondo negro para simular el espacio */
   filter: blur(40px);
   animation: circulo1 50s linear infinite both;
 }
+
 .circulos .circulo {
   position: absolute;
   width: 55%;
   height: 55%;
+  border-radius: 50%; /* Asegura que los círculos sean redondos */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Brillo alrededor de los círculos */
   animation: circulo1 50s linear infinite both;
 }
+
 .circulos .circulo1 {
   top: 0%;
   left: 0%;
+  background: radial-gradient(circle, rgba(27, 17, 69, 0.8), rgba(27, 17, 69, 0)); /* Color oscuro con transparencia */
 }
-.circulos .circulo1 .path {
-  fill: rgb(77, 34, 152);
-}
+
 .circulos .circulo2 {
   top: 0%;
   right: 0%;
+  background: radial-gradient(circle, rgba(65, 34, 121, 0.8), rgba(65, 34, 121, 0)); /* Color espacial */
 }
-.circulos .circulo2 .path {
-  fill: rgb(78, 20, 84);
-}
+
 .circulos .circulo3 {
   bottom: 0%;
   left: 0%;
+  background: radial-gradient(circle, rgba(16, 11, 31, 0.8), rgba(16, 11, 31, 0)); /* Color oscuro con transparencia */
 }
-.circulos .circulo3 .path {
-  fill: rgb(63, 7, 160);
-}
+
 .circulos .circulo4 {
   bottom: 0%;
   right: 0%;
+  background: radial-gradient(circle, rgba(135, 73, 188, 0.8), rgba(135, 73, 188, 0)); /* Color morado */
 }
-.circulos .circulo4 .path {
-  fill: rgb(44, 13, 105);
+
+.circulos .path {
+  fill: transparent; /* Mantener el fill transparente */
 }
 
 

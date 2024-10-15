@@ -3,7 +3,7 @@ import React from 'react'
 
 const Reds = () => {
   return (
-    <div className="flex flex-col mt-[175px] ml-4 sm:ml-6 md:ml-12 fixed">
+    <div className="z-50 flex flex-col mt-[175px] ml-4 sm:ml-6 md:ml-12 fixed">
       <Link
         href="mailto:matias.damian.vi@gmail.com?subject=Consulta%20desde%20el%20portafolio&body=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20ti..."
         rel="noopener noreferrer"

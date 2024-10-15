@@ -82,7 +82,10 @@ export default function RootLayout({
           </svg>
         </div>
         <Navbar />
+      
+
         <Reds />
+       
         
         {children}
 
